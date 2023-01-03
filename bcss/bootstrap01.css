@@ -1,0 +1,182 @@
+:root{
+    --dark-color: #1282a2;
+    --green-color:#ffbe0b ;
+    --yellow-color: #fb5607;
+    --red-color: #d741a7;
+    --maybanch-color: #99c5d1;
+
+
+
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    height:10000px;
+}
+.navbar .container .navbar-brand{
+    color: var(--green-color);
+}
+.main-btn{
+    background-color:var(--yellow-color) ;
+    color: var(--green-color);
+    padding: 0.5rem 1rem;
+
+}
+.main-btn:hover{
+    color: var(--green-color);
+}
+.main-title::after{
+    content:"";
+    width: 120px;
+    height: 2px;
+    background-color: var(--yellow-color);
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+/*start navbar*/
+.navbar{
+background-color: var(--dark-color);
+
+}
+.navbar .navbar-nav .nav-link{
+    color: white ;
+}
+.navbar .navbar-nav .nav-link.active,
+.navbar .navbar-nav .nav-link:focus,
+.navbar .navbar-nav .nav-link:hover{
+    color: var(--green-color) ;
+}
+.navbar .search{
+    border-left: 1px solid var(--green-color);
+
+}
+ 
+.navbar .search svg{
+    color: var(--green-color);
+}
+.navbar .navbar-toggler{
+    color:white;
+    font-size: 25px;
+    border-color: white;
+}
+.navbar .navbar-toggler:focus{
+    box-shadow:none;
+
+}
+.navbar .navbar-toggler[araia-expanded="true"]{
+    border-color: var(--green-color);
+}
+/*end navbar*/
+/*start landing*/
+.landing{
+    background: var(--dark-color);
+    min-height: calc(100vh - 72px);
+}
+
+
+
+
+/*end landing*/
+/*start features*/
+.features .main-title .icon{
+    color:var(--yellow-color);
+}
+.features .icon-holder {
+    height: 200px;
+}
+.features .icon-holder svg {
+    left:50%;
+    transform: translateX(-50%);
+}
+.features .icon-holder .number {
+    font-size: 12rem;
+    color: var(--maybanch-color)
+}
+.features .icon-holder .icon{
+    color: var(--yellow-color);
+}
+.features .feat h4{
+    color: var(--green-color);
+}
+/*end features*/
+/*start our work*/
+.our-work{
+background-color: var(--maybanch-color);
+}
+.our-work ul .active {
+    background-color: var(--yellow-color);
+    color: var(--green-color);
+}
+.our-work ul li{
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+.our-work ul li:not(.active):hover{
+    color: var(--yellow-color);
+
+}
+.our-work.box {
+    padding: 5px;
+    overflow: hidden;
+    position: relative;
+      
+}
+.our-work .box::before {
+    content: attr(data-work);
+    font-size: larger;
+ 
+
+}
+
+/*end our work*/
+/*starat subscribe*/
+.subscribe {
+    background-color: var(--green-color);
+
+
+}
+.subscribe input[type="text"]{
+    border: none;
+    border-bottom: 1px solid white;
+}
+.subscribe input[type="text"]:focus {
+outline: none;
+}
+.subscribe ::placeholder {
+    color: white;
+}
+.subscribe input[type="submit"]{
+    background-color: black;
+    color: var(--green-color);
+}
+
+/*end subscribe*/
+/*start footer*/
+.footer{
+    background-color: var(--dark-color);
+}
+.footer .copyright > span{
+    color: green;
+}
+
+.footer .copyright div span{
+    color:#ffbe0b;
+}
+.footer .contact ul svg{
+    width: 30px;
+    height: 30px;
+}
+.footer .facebook{
+    background-color: #1877f2;
+}
+.footer .instagram{
+    background-color: #833ab4;
+}
+.footer .github{
+    background-color: #333;
+}
+.footer .linkedin{
+    background-color: #0077b5;
+}
+/*end footer*/
